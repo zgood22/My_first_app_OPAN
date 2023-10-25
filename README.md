@@ -26,5 +26,13 @@ python app/unemployment.py
 Install Packages:
 
 '''sh
-pip install -r requirements.txtx
+pip install -r requirements.txt
+'''
+THere is now an enviorment variable that uses the imput of "ALPHAVANTAGE_API_KEY"
+
+You will also need to create a .env file and post the following variables
+Obtain API Key from prof or from website
+'''sh
+
+ALPHAVANTAGE_API_KEY="_______"
 '''
