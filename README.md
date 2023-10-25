@@ -10,4 +10,21 @@ conda create -n my-first-env python=3.10
 conda activate my-first-env
 ```
 
-Once in root
+Once in root:
+
+'''
+Python app/my_script.py
+
+'''
+
+OR
+
+'''sh
+python app/unemployment.py
+'''
+
+Install Packages:
+
+'''sh
+pip install -r requirements.txtx
+'''
