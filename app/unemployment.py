@@ -1,9 +1,11 @@
 from getpass import getpass
 import os
-from dotenv import load_dotenv
-import requests
 import json
 from pprint import pprint
+
+import requests
+from dotenv import load_dotenv
+from plotly.express import line
 
 load_dotenv()
 #Above looks in the .env
@@ -58,7 +60,6 @@ print("NO MONTHS:", len(this_year))
 #
 # Plot a line chart of unemployment rates over time.
 
-from plotly.express import line
 
 dates = [d["date"] for d in data]
 rates = [float(d["value"]) for d in data]
