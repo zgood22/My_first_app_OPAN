@@ -1,16 +1,20 @@
 from getpass import getpass
 import os
 from dotenv import load_dotenv
-
-load_dotenv
-#Above looks in the .env
-
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
-
-
 import requests
 import json
 from pprint import pprint
+
+load_dotenv()
+#Above looks in the .env
+
+API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+print(API_KEY)
+
+#breakpoint()
+#quit()
+
+
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 
