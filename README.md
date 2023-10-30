@@ -12,9 +12,8 @@ conda activate my-first-env
 
 Once in root:
 
-'''
+'''sh
 Python app/my_script.py
-
 '''
 
 OR
@@ -28,6 +27,8 @@ Install Packages:
 '''sh
 pip install -r requirements.txt
 '''
+
+
 THere is now an enviorment variable that uses the imput of "ALPHAVANTAGE_API_KEY"
 
 You will also need to create a .env file and post the following variables
