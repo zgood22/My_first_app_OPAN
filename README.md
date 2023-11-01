@@ -16,10 +16,10 @@ Once in root:
 Python app/my_script.py
 ```
 
-OR
+OR (and we can now no longer run the unemployment the same way)
 
 ```sh
-python app/unemployment.py
+python -m app.unemployment
 ```
 
 Install Packages:
