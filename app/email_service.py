@@ -60,4 +60,6 @@ my_content = """
         <li>Strawberry</li>
     </ul>
 """
-send_email(html_content=my_content)
+
+user_address = input("What is your email: ")
+send_email(html_content=my_content, recipient_address=user_address)
