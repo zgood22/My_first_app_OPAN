@@ -78,4 +78,4 @@ content = f"""
 
 <p> Latest rate: {latest_rate}% as of {latest_date} </p>
 """
-send_email(html_content=my_content, recipient_address=user_address)
+send_email(html_content=content, recipient_address=user_address)
