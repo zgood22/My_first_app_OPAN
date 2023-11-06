@@ -31,6 +31,9 @@ print(parsed_response.keys())
 
 data = parsed_response["data"]
 
+latest_rate = data[0]['value']
+latest_date = data[0]['date']
+
 # Challenge A
 #
 # What is the most recent unemployment rate? And the corresponding date?
@@ -39,7 +42,7 @@ data = parsed_response["data"]
 print("-------------------------")
 print("LATEST UNEMPLOYMENT RATE:")
 #print(data[0])
-print(f"{data[0]['value']}%", "as of", data[0]["date"])
+print(f"{latest_rate}%", "as of", "as of", latest_date)
 
 
 # Challenge B
@@ -69,8 +72,7 @@ rates = [float(d["value"]) for d in data]
 fig = line(x=dates, y=rates, title="United States Unemployment Rate over time", labels= {"x": "Month", "y": "Unemployment Rate"})
 fig.show()
 
-latest_rate = data[0]['value']
-latest_date = data[0]['date']
+
 
 user_address = input("What is your email: ")
 content = f"""
