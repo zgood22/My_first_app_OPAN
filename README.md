@@ -38,4 +38,10 @@ Obtain API Key from prof or from website
 ALPHAVANTAGE_API_KEY="_______"
 ```
 
+## Testing
+Run tests:
 
+NOTE** add a file called conftest.py to the root directory "conftest.py" which helps pytest find the file
+```sh
+pytest
+```
