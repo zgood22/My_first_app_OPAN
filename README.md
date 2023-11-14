@@ -47,3 +47,9 @@ pytest
 ```
 In addition to the testing function imputted, the success of the application is verfied by automated testing.
 Code has been refactored previously and should continue to be refactored if any significant changes are to be made
+
+The name of the refactored weather app is called "weather2" to call the app:
+
+```sh 
+python -m app.weather2
+```
