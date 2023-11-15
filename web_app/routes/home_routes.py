@@ -33,3 +33,14 @@ def hello_world():
     message = f"Hello, {name}!"
     return message
     #return render_template("hello.html", message=message)
+
+@home_routes.route("/api/books.json")
+def books():
+    print("BOOKS...")
+    books = [
+        {"id":1, "title" : "Harry Potter", "Author" : "J.K.Rowling"},
+        {"id":2, "title" : "Percy Jackson", "Author" : "Rick Riodan"},
+        {"id":3, "title" : "Power of Now", "Author" : "Eckhart Tole"},
+    ]
+
+    return books
