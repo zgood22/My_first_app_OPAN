@@ -6,6 +6,7 @@ from pprint import pprint
 import requests
 from dotenv import load_dotenv
 from plotly.express import line
+from app.alpha import API_KEY
 
 from app.email_service import send_email
 

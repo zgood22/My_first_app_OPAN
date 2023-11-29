@@ -38,6 +38,11 @@ Obtain API Key from prof or from website
 ALPHAVANTAGE_API_KEY="_______"
 ```
 
+Running the stocks report
+```sh
+python -m app.stocks
+```
+
 ## Testing
 Run tests:
 
