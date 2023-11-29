@@ -16,4 +16,4 @@ pgeocode
 Ipython
 flask
 #PRODUCTION server requires this
-guinicorn
+gunicorn
