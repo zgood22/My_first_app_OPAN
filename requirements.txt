@@ -14,3 +14,6 @@ pytest
 pgeocode
 
 Ipython
+flask
+#PRODUCTION server requires this
+gunicorn

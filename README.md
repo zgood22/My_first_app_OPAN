@@ -38,6 +38,11 @@ Obtain API Key from prof or from website
 ALPHAVANTAGE_API_KEY="_______"
 ```
 
+Running the stocks report
+```sh
+python -m app.stocks
+```
+
 ## Testing
 Run tests:
 
@@ -52,4 +57,12 @@ The name of the refactored weather app is called "weather2" to call the app:
 
 ```sh 
 python -m app.weather2
+```
+### Web App
+
+Run the web app (then view in the browser at http://localhost:5000/):
+
+```sh
+# Mac OS:
+FLASK_APP=web_app flask run
 ```

@@ -6,6 +6,7 @@ from pprint import pprint
 import requests
 from dotenv import load_dotenv
 from plotly.express import line
+from app.alpha import API_KEY
 
 from app.email_service import send_email
 
@@ -85,3 +86,13 @@ if __name__ == "__main__":
     <p> Latest rate: {latest_rate}% as of {latest_date} </p>
     """
     send_email(html_content=content, recipient_address=user_address)
+
+def format_pct(my_number):
+    """
+    Formats a percentage number like 3.6555554 as percent, rounded to two decimal places.
+
+    Param my_number (float) like 3.6555554
+
+    Returns (str) like '3.66%'
+    """
+    return f"{my_number:.2f}%"
