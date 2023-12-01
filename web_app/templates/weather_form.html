@@ -1,0 +1,22 @@
+
+{% extends "bootstrap_5_layout.html" %}
+{% set active_page = "stocks_form" %}
+
+{% block content %}
+
+    <h2>Weather Form</h2>
+
+    <p> Enter a zip code and see the forecast for the week </p>
+
+    <form action="/weather/dashboard" method="POST">
+
+        <label>Zip Code</label>
+        <input type="text" name="zip_code" placeholder="90274" value="90274">
+        <br>
+
+       
+
+        <button class="btn btn-success">Submit</button>
+    </form>
+
+{% endblock %}

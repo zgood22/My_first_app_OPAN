@@ -1,0 +1,20 @@
+{% extends "bootstrap_5_layout.html" %}
+{% set active_page = "stocks_dashboard" %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+</head>
+<body>
+    <div>
+        <h1>Weather Information</h1>
+        <p>Here is the weather for {{ zip_code }}:</p>
+        <p>Temperature: {{ today_temp }}°F</p>
+        <p>Short Description: {{ today_detail }}</p>
+    </div>
+</body>
+</html>

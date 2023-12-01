@@ -27,11 +27,13 @@ def display_weather(parsed_forecast_response):
      periods = parsed_forecast_response["properties"]["periods"]
      daytime_periods = [period for period in periods if period["isDaytime"] == True]
      degree_sign = "*"
+     '''
      for period in daytime_periods:
         print("-------------")
         print(period["name"], period["startTime"][0:7])
         print(period["shortForecast"], f"{period['temperature']} {degree_sign}{period['temperatureUnit']}")
         print(period["detailedForecast"])
+    '''
      return daytime_periods
 
     
