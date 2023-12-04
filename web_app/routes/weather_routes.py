@@ -30,7 +30,7 @@ def weather_dashboard():
         today_temp = daytime_periods[0]['temperature']
         today_detail = daytime_periods[0]['shortForecast']
     
-        flash("Fetched Real-time Market Data!", "success")
+        flash("Fetched Real-time Weather Data!", "success")
         return render_template("weather_dashboard.html",
             zip_code=zip_code,
             today_temp=today_temp,
