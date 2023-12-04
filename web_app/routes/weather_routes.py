@@ -5,11 +5,11 @@ from app.weather2 import fetch_data, display_weather
 weather_routes = Blueprint("weather_routes", __name__)
 
 @weather_routes.route("/weather/form")
-def stocks_form():
+def weather_form():
     print("WEATHER FORM...")
     return render_template("weather_form.html")
 
-@weather_routes.route("/weather/dashboard")
+@weather_routes.route("/weather/dashboard", methods=["GET", "POST"])
 def weather_dashboard():
     print("WEATHER DASHBOARD... ")
 
